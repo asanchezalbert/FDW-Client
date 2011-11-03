@@ -1,0 +1,14 @@
+#contenido
+	h1=item.titulo
+	.contenido
+		!{item.contenido}
+
+	- if(item.comentarios.length > 0)
+		h2='Comentarios'
+
+		.comentarios
+			ul
+				- item.comentarios.forEach(function (comentario) {
+					li
+						!{comentario}
+				- })

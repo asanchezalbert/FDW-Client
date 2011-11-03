@@ -1,0 +1,14 @@
+header
+	h1= title
+
+.wrapper
+	nav
+		ul
+			- items.forEach(function (item) {
+				li
+					h1
+						a(href='#'+item['href'])= item['titulo']
+					small= item['autor']
+			- })
+
+	#contenido
