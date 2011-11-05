@@ -1,0 +1,2 @@
+Este proyecto es un cliente para ver los temas de mi sección favorita de http://forosdelweb.com (HTML5), lo hago como un ejercicio para experimentar con heroku y nodejs. Require express, jade, stylus, request, jsdom y coffeescript.
+
