@@ -1,13 +1,11 @@
 
- # Module dependencies.
-
+# dependencias (express)
 express = require 'express'
 routes  = require './routes'
 
 app = module.exports = express.createServer()
 
-# Configuration
-
+# configuracion
 app.configure ->
   app.set 'views', __dirname + '/views'
   app.set 'view engine', 'jade'
@@ -22,10 +20,9 @@ app.configure 'development', ->
 app.configure 'production', ->
   app.use express.errorHandler()
 
-# Routes
-
-app.get '/', routes.index
-app.get '/:tema', routes.tema
+# direcciones
+app.get '/', routes.index # el home muestra una lista de temas
+app.get '/:tema', routes.tema # carga el tema de fdw
 
 app.listen process.env.PORT or 3000
 
