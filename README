@@ -1,3 +1,7 @@
-Este proyecto es un cliente para ver los temas de mi sección favorita de http://forosdelweb.com (HTML5), lo hago como un ejercicio para experimentar con heroku y nodejs. Require express, jade, stylus, request, jsdom y coffeescript.
+Este proyecto ahora es un experimento para hacer un frontend más amigable del foro de ofertas de empleo de http://forosdelweb.com.
 
-http://fdw.herokuapp.com/
+Alojado en heroku http://fdw.herokuapp.com/ y dotcloud 
+
+Lo hago como un ejercicio para experimentar con heroku, nodejs y mongodb. Require express, jade, stylus, request, jsdom, coffeescript y mongodb.
+
+
