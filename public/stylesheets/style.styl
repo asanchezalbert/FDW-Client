@@ -4,7 +4,7 @@
 	-webkit-box-sizing border-box
 
 body 
-	font-size 14px
+	font-size 16px
 	font-family arial, sans-serif
 	color #444
 
@@ -18,75 +18,18 @@ header
 		margin 10px 15px
 		font-weight normal
 		color white
+
+li
+	border 1px solid gray
+	padding 10px
+	margin 5px
+
+	em
+		font-size 14px
+		display:block
 	
-
-
-.wrapper 
-	display -webkit-box
-	margin 15px 0
-
-
-nav 
-	height 100%
-	overflow scroll
-	-webkit-overflow-scrolling  touch
-	width 400px
-
-	li 
-		list-style none
-		padding 15px 10px
-		border 1px solid #222
-		margin  5px
-		background -webkit-gradient(linear, left top, left bottom, from(lighten(#ccc, 10%)), to(darken(#fff, 5%)))
-
-		a 
-			color #222
-		
-
-		h1 
-			font-size 18px
-			margin 0
-		
+	
 		
 
 
-body, html, .wrapper 
-	height 100%
-	overflow hidden
-
-
-
-#contenido 
-	height 100%
-	overflow scroll
-	-webkit-overflow-scrolling  touch
-	padding 15px
-	-webkit-box-flex 1
-	margin-right 5px
-
-	h1 
-		margin 0 0 20px
 	
-
-	h2 
-		margin  10px 0
-	
-
-	.contenido > div first-child 
-		display none
-	
-
-	& empty 
-		background url(/images/cargando.gif) center center no-repeat
-	
-
-	.comentarios 
-		li 
-			list-style none
-			padding 15px 10px
-			border 1px solid #222
-			margin  5px
-			background -webkit-gradient(linear, left top, left bottom, from(lighten(#ccc, 10%)), to(darken(#fff, 5%)))
-			
-		
-

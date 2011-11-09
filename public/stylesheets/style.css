@@ -4,7 +4,7 @@
   -webkit-box-sizing: border-box;
 }
 body {
-  font-size: 14px;
+  font-size: 16px;
   font-family: arial, sans-serif;
   color: #444;
 }
@@ -18,60 +18,12 @@ header h1 {
   font-weight: normal;
   color: #fff;
 }
-.wrapper {
-  display: -webkit-box;
-  margin: 15px 0;
-}
-nav {
-  height: 100%;
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
-  width: 400px;
-}
-nav li {
-  list-style: none;
-  padding: 15px 10px;
-  border: 1px solid #222;
+li {
+  border: 1px solid #808080;
+  padding: 10px;
   margin: 5px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#d1d1d1), to(#f2f2f2));
 }
-nav li a {
-  color: #222;
-}
-nav li h1 {
-  font-size: 18px;
-  margin: 0;
-}
-body,
-html,
-.wrapper {
-  height: 100%;
-  overflow: hidden;
-}
-#contenido {
-  height: 100%;
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
-  padding: 15px;
-  -webkit-box-flex: 1;
-  margin-right: 5px;
-}
-#contenido h1 {
-  margin: 0 0 20px;
-}
-#contenido h2 {
-  margin: 10px 0;
-}
-#contenido .contenido > div first-child {
-  display: none;
-}
-#contenido empty {
-  background: url("/images/cargando.gif") center center no-repeat;
-}
-#contenido .comentarios li {
-  list-style: none;
-  padding: 15px 10px;
-  border: 1px solid #222;
-  margin: 5px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#d1d1d1), to(#f2f2f2));
+li em {
+  font-size: 14px;
+  display: block;
 }
