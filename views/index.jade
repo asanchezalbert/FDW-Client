@@ -1,9 +1,21 @@
 header
-	h1= title
+	h1
+		a(href="/")= title
+
+
+p
+	label País: 
+	select(id="filtro_regiones")
+		option(value="/") Todos
+		each region in regiones
+			if region
+				option(value="/?r=#{region}")= region
 
 ul
-	- empleos.forEach(function (empleo) {
-		li 
-			h5= empleo.puesto
-			em Sueldo: #{empleo.pago}
-	- })
+	each empleo in empleos
+		li
+			h2= empleo.puesto
+			if empleo.pago
+				em Sueldo: #{empleo.pago}
+			if empleo.region
+				em Región: #{empleo.region}

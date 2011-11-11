@@ -16,10 +16,18 @@
     return db.open(function(err, db) {
       return db.authenticate(DB_USER, DB_PASSWD, function(err) {
         return db.collection('empleos', function(err, collection) {
-          return collection.find({}, {}).toArray(function(err, empleos) {
-            return res.render('index', {
-              title: 'Empleo - Foros del Web',
-              empleos: empleos
+          return collection.distinct('region', function(err, regiones) {
+            var query;
+            query = {};
+            if (req.query.r) {
+              query.region = req.query.r;
+            }
+            return collection.find(query, {}).toArray(function(err, empleos) {
+              return res.render('index', {
+                title: 'Empleo - Foros del Web',
+                empleos: empleos,
+                regiones: regiones
+              });
             });
           });
         });
